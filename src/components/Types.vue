@@ -4,7 +4,7 @@
             <div v-for="t in types" v-bind:key="t.id">
                 
                 <b-list-group-item class="d-flex justify-content-between align-items-center">
-                    <router-link :to=" '/type/'+t.id+'/element'">
+                    <router-link :to=" '/type/'+t.id+'/elements'">
                     {{t.title}}
                     </router-link>
                 </b-list-group-item>
