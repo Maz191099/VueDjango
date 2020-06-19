@@ -3,7 +3,7 @@
     <b-navbar type="dark" variant="dark" class="mb-3">
         <b-navbar-brand>Los Indispensables</b-navbar-brand>
         <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
+        
 
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="User" right>
