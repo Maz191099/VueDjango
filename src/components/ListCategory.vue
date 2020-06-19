@@ -26,6 +26,11 @@ export default {
             .then(res => this.elements=res)
         }
     },
+    watch: {
+        "$route.params.id" : function(){
+           this.findAll() 
+        }
+    },
     
 }
 </script>

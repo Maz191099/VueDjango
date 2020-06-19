@@ -13,7 +13,6 @@ export default {
     created(){
         this.findAll()
     },
-
     data(){
         return{
             elements: []
@@ -24,6 +23,11 @@ export default {
             fetch('http://127.0.0.1:8000/api/type/'+this.$route.params.id+'/elements/?format=json')
             .then(res => res.json())
             .then(res => this.elements=res)
+        }
+    },
+    watch: {
+        "$route.params.id" : function(){
+           this.findAll() 
         }
     },
     
