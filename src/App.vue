@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header/>
-    <router-link to="/">Lista</router-link>
-    <router-link to="/detail">Detalle</router-link>
+    <Categories/>
+    <Types/>
     <!--<Detail/>-->
     <router-view></router-view>
   </div>
@@ -12,10 +12,15 @@
 // import HelloWorld from './components/HelloWorld.vue'
 //import Detail from './components/Detail'
 import Header from './components/Header'
+import Categories from './components/Categories'
+
+import Types from './components/Types'
 export default {
   name: 'App',
   components: {
-    Header
+    Header, 
+    Categories,
+    Types
   }
 }
 </script>
