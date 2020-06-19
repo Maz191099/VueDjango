@@ -1,14 +1,12 @@
 <template>
     <div>
+        <h5>Tipos</h5>
         <b-list-group>
-            <div v-for="t in types" v-bind:key="t.id">
-                
-                <b-list-group-item class="d-flex justify-content-between align-items-center">
-                    <router-link :to=" '/type/'+t.id+'/elements'">
+            <b-list-group-item button v-for="t in types" v-bind:key="t.id">
+                <router-link :to=" '/type/'+t.id+'/elements'">
                     {{t.title}}
-                    </router-link>
-                </b-list-group-item>
-            </div>
+                </router-link>
+            </b-list-group-item>
         </b-list-group>
     </div>
 </template>

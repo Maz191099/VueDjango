@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div >
         <b-table striped hover :items="elements" :fields="fields">
 
         </b-table>

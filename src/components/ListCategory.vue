@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <h2>Listado de elementos por categorias</h2>
+    <div >
+        <h2>Listado de elementos por categorías</h2>
         <ListDefault :elementsList="elements"/>
     </div>
 </template>

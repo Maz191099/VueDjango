@@ -9,7 +9,7 @@
             <b-dropdown-item href="#">Account</b-dropdown-item>
             <b-dropdown-item href="#">Settings</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item-dropdown text="Categorias" right>
+        <b-nav-item-dropdown text="Categorías" right>
             <b-dropdown-item v-for="c in categories" v-bind:key="c.id" :to=" '/category/'+c.id+'/elements'">
                 {{c.title}}
             </b-dropdown-item>

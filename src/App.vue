@@ -1,10 +1,20 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <Header/>
-    <Categories/>
-    <Types/>
-    <!--<Detail/>-->
-    <router-view></router-view>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ">
+          <Categories/>
+          <br>
+          <Types/>
+        </div>
+        <div class="col-md-8 ">
+          <!--<Detail/>-->
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </template>
 
@@ -13,7 +23,6 @@
 //import Detail from './components/Detail'
 import Header from './components/Header'
 import Categories from './components/Categories'
-
 import Types from './components/Types'
 export default {
   name: 'App',
